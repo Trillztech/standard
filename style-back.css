@@ -1,0 +1,1114 @@
+*{
+    padding:0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* style holding the body */
+
+.contain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* first div */
+
+.small{
+    width: 0%;
+    height: 100vh;
+    background-color:#004480;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.small section{
+    width: 80%;
+    padding:4%;
+    margin: auto;
+}
+
+.small section a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding:4%;
+    font-weight: bold;
+}
+
+.small section img{
+    width: 80%;
+}
+
+.small-screen{
+    display: none;
+}
+
+/* second div */
+
+.big{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.big section{
+    width: 100%;
+    padding: 1%;
+}
+
+.big .head{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:98%;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+/* div holding menu */
+
+
+.big .head .toomenu{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.big .head .bar,
+.big .head .tog{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid blue;
+}
+
+.big .head .bar span,
+.big .head .tog span{
+    width: 35px;
+    border: 2px solid #004480;
+    border-radius: 10px;
+    margin-top:10%;
+    background-color: #004480;
+}
+
+.big .head .bar #two,
+.big .head .tog #two{
+    width: 28px;
+}
+
+.big .head  .tog{
+    display: none;
+    color: #004480;
+    font-size: 2rem;
+}
+
+.big .head i{
+    font-size: 2rem;
+}
+
+
+/* div holding login details */
+
+.big .head #user{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.big .head #user span{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.big .head #user span p{
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+/* div holding dashboard */
+
+.big .body{
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    padding:2%;
+    cursor: pointer;
+    border: 0px solid black;
+}
+
+.big .body .section p{
+    text-transform: capitalize;
+    color: #004480;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.big .body .top{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.big .body .top section{
+    width: 45%;
+    background-color: white;
+    margin-top: 2%;
+    padding: 2%;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+
+.big .body .top section span{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.big .body .top section span h1{
+    color: #595959; 
+    padding-top: 1%;
+ }
+
+.big .body .top section span h4{
+    color: #008000; 
+    padding: 1%;
+    background-color: #b3ffb3;
+    width: 20%;
+    border-radius: 10px;
+    
+ }
+
+.big .body .top section span p{
+    padding-top:2%;
+    text-transform: capitalize;
+    color: 	#333333;
+ }
+
+.big .body .top section #rou{
+    width: 30%;
+}
+
+.big .body .top section #rou p{
+    color:#004480;
+    background-color: #b3dbff;
+    text-align: center;
+    border-radius: 50%;
+    padding:5%;
+    width:20px;
+    margin-left:60%;
+    margin-top: 10%;
+}
+
+.big .body .top section i{
+    color: #004480;
+    font-size: 3rem;
+}
+
+.big .body .top #dash{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #b3dbff;
+}
+
+.big .body .top #dash h2{
+    text-transform: capitalize;
+    font-size: 1rem;
+    width:150%;
+    /* margin-top:8%; */
+}
+
+.big .body .top #dash img{
+    width: 60%;
+    margin-left: 40%;
+}
+
+.big .body .lower{
+    background-color: white;
+    margin-top:8%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.big .body .lower section{
+    width: 100%;
+    text-transform: capitalize;
+    /* padding: 2%;  */
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.big .body .lower #iframe iframe{
+    width: 100%;
+    overflow-y:auto;
+    scroll-behavior: smooth;
+}
+
+.last{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.last h2{
+    text-align-last:left;
+    text-transform: capitalize;
+    width: 100%;
+    text-indent:40px;
+}
+
+.last section{
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.last section span{
+    width: 50%;
+}
+
+.last section h2{
+    width: 100%;
+    border: 1px solid blue;
+}
+
+.last section p{
+    margin-top: 2%;
+    text-transform: capitalize;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.last section h3{
+    margin-top: 2%;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* style for deposit */
+
+.big .body .sive{
+padding: 1%;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+background-color: white;
+}
+
+.big .body .sive form{
+    width: 98%;
+    padding: 1%;
+    margin: auto;
+    margin-top:1%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.body .sive form section{
+    width:50%;
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body .sive form #tab{
+    width: 95%;
+    margin-top: 2%;
+}
+
+.body .sive form section input,
+.sive form section select{
+    border: 1px solid;
+    padding: 2%;
+    margin-top: 2%;
+    outline: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+
+.sive form section #btn{
+    background-color: #004480;
+    color: white;
+    border-radius: 0px 0px 0px;
+    border: 0px;
+    text-transform: capitalize;
+}
+
+.big .body .sive section p{
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #004480;
+    font-weight: bold;
+}
+
+.big .body .sive section div{
+    padding: 1%;
+    box-shadow: 0px 0px 10px #333333;
+    width: 40%;
+    border:0px solid red;
+}
+
+.sive section div form input{
+    padding: 10px;
+    border-radius: 20px;
+    outline:none;
+    border: 1px solid black;
+}
+
+
+.sive section div form a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.body .pay{
+    border: 0px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0px 0px 0px #404040;
+}
+
+.body .pay section{
+    /* width: 100%; */
+    border: 0px solid black;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.body .pay section span{
+    font-size: 1.4rem;
+    width:100%;
+    border: 0px solid red;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    display: none;
+}
+
+.body .pay section span p{
+    width: 90%;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.body .pay section span input{
+    width:80%;
+    text-transform: capitalize;
+    border: 0px solid red;
+    padding: 10px;
+    font-weight: bold;
+    align-items: right;
+    color: black;
+}
+
+.body .pay section span #btn-cpy{
+    width: 14%;
+    background-color: #004480;
+    color: white;
+    border:0px;
+    padding: 9px;
+}
+
+/* style for settings */
+
+.settings{
+    border: 0px solid red;
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.settings section{
+    box-shadow: 0px 0px 10px #404040;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.settings section form input{
+    border: 0px solid #004480;
+    width: 40%;
+    padding: 1%;
+    text-transform: capitalize;
+    margin-left: 5%;
+    margin-top: 2%;
+    outline: none;
+    border-bottom:2px solid #004480;
+}
+
+.settings section form #save{
+    color: white;
+    background-color: #004480;
+    width: 150px;
+    margin-bottom: 1%;
+}
+
+/* style for history */
+
+.history{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.history section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+
+.history section table{
+    width: 90%;
+    padding: 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.history section table th{
+    background-color: #004480;
+    color: white;
+    text-transform: capitalize;
+}
+
+.history section table td{
+    color: #004480;
+    background-color: #f2f2f2;
+    text-transform: capitalize;
+}
+
+.history section p{
+    text-transform: capitalize;
+}
+
+/* style for customer care */
+
+.care{
+    width: 100%;
+    border: 0px solid red;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1%;
+}
+
+.care section{
+    width: 80%;
+    border: 0px solid blue;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.care section p{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.care section form{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.care section form input{
+    width: 40%;
+    padding: 10px;
+    margin-top: 2%;
+    text-transform: capitalize;
+    outline: none;
+    border: 0px;
+    border-bottom:2px solid #004480;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.care section form textarea{
+    width: 92%;
+    margin-top: 2%;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px;
+    border-bottom:2px solid #004480;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.care section form #bnt{
+    background-color: #004480;
+    color: white;
+    margin-bottom: 1%;
+}
+
+/* style for invest */
+
+
+.big .body .invest{
+    display: flex;
+    flex-direction:row;
+    box-sizing: border-box;
+    background-color: white;
+    }
+    
+    .big .body .invest section{
+        width:100%;
+        margin: auto;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border:0px solid blue;
+    }
+
+    .big .body .invest div{
+        width:40%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .big .body .invest div input,
+    .big .body .invest div select{
+        width: 96%;
+        margin-left:2%;
+        padding: 10px;
+        margin-top: 5%;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .big .body .invest div #txtx{
+        width: 100%;
+    }
+
+    .big .body .invest div #subvest{
+        color: white;
+        background-color: #004480;
+        border: 0px;
+    }
+
+    .big .body .invest section form{
+        width:100%;
+        margin: auto;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border:0px solid red;
+    }
+
+.big .body .invest section span {
+    width: 30%;
+    margin-top: 4%;
+    margin-bottom:1%;
+    border-radius:2%;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #404040;
+    border:0px solid red;
+}
+
+.big .body .invest section form span  p{
+    text-align: center;
+    color: #404040;
+    border: 0px;
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+
+.big .body .invest section form span  h2{
+    text-align: center;
+}
+
+.big .body .invest section form span input{
+    width: 30%;
+    margin-left:35%;
+    margin-top: 2%;
+    background-color: #004480;
+    color: white;
+    text-transform: capitalize;
+    padding: 4px;
+    border: 1px;
+    cursor: pointer;
+}
+
+
+.pay{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0px 0px 10px #404040;
+}
+
+.pay section{
+    width: 90%;
+    border: 1px solid black;
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: none;
+    box-sizing: border-box;
+}
+
+/* style for pending deposit  */
+
+.depo{
+    padding: 4%;
+    /* background-color: white; */
+    overflow-x: scroll;
+}
+
+.depo table{
+    border: 1px solid #004480;
+    text-align: left;
+}
+
+.depo table tr th{
+    background-color: #004480;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.depo table tr td{
+    padding: 5px;
+    font-weight: bold;
+    color: #004480;
+}
+
+.depo table tr td input{
+    background-color: #004480;
+    color: white;
+    padding: 5px;
+    border: 0px;
+}
+
+.withd{
+    border: 0px solid red;
+    background-color: white;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.withd p{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.withd section form{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid blue;
+    box-sizing: border-box;
+    width: 70%;
+    margin: auto;
+}
+
+.withd section form input,
+.withd section form select{
+    padding: 1%;
+    border: 1px solid;
+    outline: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: 2%;
+    text-align: center; 
+}
+
+.withd section form #btn{
+    color: white;
+    background-color: #004480;
+}
+
+/* end of big screen */
+
+
+
+/* media screen  for medium screen*/
+@media(max-width:896px){
+
+.big .head{
+    padding: 2%;
+    box-sizing: border-box;
+    width: auto;
+}
+
+
+}
+/* end of medium screen */
+
+
+
+/* media screen  for smaller screen*/
+@media(max-width:640px){
+
+.small{
+    display: none;
+}
+
+.big .head{
+    padding: 2%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.big .head .bar,.big .head #user span p{
+    display: none;
+}
+
+.big .head .tog{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid blue;
+}
+
+
+/* style for side div */
+
+.small-screen{
+    width:0%;
+    height: 100vh;
+    background-color:#004480;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    position: fixed;
+    overflow-x: hidden;
+    display: block;
+}
+
+.small-screen section{
+    width: 80%;
+    padding:4%;
+    margin: auto;
+}
+
+.small-screen section a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding:4%;
+    font-weight: bold;
+}
+
+.small-screen section img{
+    width: 80%;
+}
+
+.small-screen p{
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0%;
+    margin: 0%;
+    padding-right: 5%;
+}
+
+.big{
+    width: 100%;
+}
+
+
+.big .head{
+    padding: 2%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+/* style for user info */
+
+.big .head #user span{
+    display: none;
+}
+
+/* style for the for divs on top */
+
+.big .body .top{
+    flex-direction: column;
+}
+
+.big .body .top section{
+    margin: auto;
+    width: 97%;
+    margin-top: 5%;
+    padding:8%;
+    box-sizing: border-box;
+}
+
+.big .body .top section span h4{
+    font-size: .8;
+    width: 30%;
+}
+/* end for dashbord */
+
+
+/* style for deposit page */
+
+.big .body .sive{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: inherit;
+    }
+    
+    .big .body .sive form{
+        width: 100%;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+    
+    .body .sive form section{
+        width:95%;
+        padding:1%;
+    }
+    
+.body .sive form section input,
+.sive form section select{
+    padding: 3%;
+    margin-top: 4%;
+    background-color: inherit;
+}
+/* end for deposit */
+    
+
+/* style for invest */
+    
+.big .body .invest{
+    flex-direction:column;
+    box-sizing: border-box;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #595959;
+    margin-top: 10%;
+    }
+    
+    .big .body .invest section{
+        display: none;
+    }
+
+    .big .body .invest div{
+        width:95%;
+        margin: auto;
+        padding-bottom: 2%;
+    }
+
+    .big .body .invest div input,
+    .big .body .invest div select{
+        width: 96%;
+        border: 1px solid #595959;
+        background-color: inherit;
+        box-sizing: border-box;
+    }
+    /* end */
+
+
+    /* style for withdrawal */
+
+.withd{
+    background-color: white;
+    padding:2%;
+    margin-top: 10%;
+}
+
+.withd p{
+    font-size: .9rem;
+}
+
+.withd section form{
+    padding: 1%;
+    width: 100%;
+}
+
+.withd section form input,
+.withd section form select{
+    padding:3%;
+    font-size: 1rem;
+    margin-top: 4%;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* end */
+
+
+/* style for settings */
+
+.settings{
+    width: 100%;
+    margin-top: 10%;
+    box-sizing: border-box;
+}
+
+.settings section{
+    width: 100%;
+    flex-direction:column;
+}
+
+.settings section form input{
+    border: 0px solid #004480;
+    width:90%;
+    margin-top:5%;
+    border-bottom:2px solid #004480;
+}
+/* end */
+
+
+/* style for history */
+
+.history{
+    width: 100%;
+    padding: 0%;
+}
+
+.history section{
+    width:100%;
+    box-sizing: border-box;
+}
+
+
+.history section table{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.history section table th{
+    background-color: #004480;
+    color: white;
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
+.history section table td{
+    font-size: .8rem;
+}
+
+.history section p{
+    font-size: .8rem;
+}
+/* end */
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

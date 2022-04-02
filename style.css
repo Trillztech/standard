@@ -1,0 +1,1697 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:poppins;
+    box-sizing: border-box;
+    background-color: #e6f3ff;
+}
+
+h1,h2,h3,h4{
+    text-align: center;
+    font-family: poppins;
+    text-transform: capitalize;
+    color: #004480;
+}
+
+p{
+    color:#4d4d4d;
+    font-family: poppins;
+}
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px solid blue;
+}
+
+.nice{
+    width: 100%;
+    padding:2%;
+    border: 0px solid red;
+    box-sizing: border-box;
+}
+
+/* style for header */
+
+header{
+    border: 0px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color:#004480;
+    position:sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.logo{
+    width:20%;
+}
+
+.logo img{
+    width:80%;
+}
+
+.nav{
+    width:65%;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:3%;
+}
+
+.nav ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-top:5px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.nav ul li a:active{
+    border-bottom: 2px solid white;
+    box-shadow: 1px white;
+}
+
+.nav ul li a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom:10%;
+}
+/* end */
+
+/* style for sidenav */
+
+.dits{
+    display: none;
+}
+
+.side{
+    display: none;
+}
+
+/* style for homepage css */
+
+.home{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.bod{
+    background-image: url(img/back.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:top;
+    object-fit: cover;
+    width: 100%;
+    height:80vh;
+}
+
+
+.text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+.text h1{
+    color: white;
+    text-align: center;
+    padding-left: 5%;
+    width: 80%;
+    font-family:poppins;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.text h2{
+    color: white;
+    width: 80%;
+    text-align: center;
+    padding-left: 5%;
+    font-family: poppins;
+    font-size: 2rem;
+    text-transform: uppercase;
+    align-self: center;
+    font-family: sans-serif;
+}
+
+
+.text p{
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    word-spacing: 3px;
+}
+
+.text .frame{
+    position:absolute;
+    top: 38vh;
+    width: 100%;
+    margin-top: 20%;
+}
+/* style for homepage button  */
+
+  button {
+    width: 140px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color:white;
+    font-family: sans-serif'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    margin-top: 50px;
+    transition: all 0.5s;
+    z-index: 1;
+    text-transform: capitalize;
+   }
+
+  /* button a{
+      color: white;
+      text-decoration: none;
+  } */
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color:#004480;
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   
+   button:hover {
+    color: white;
+   }
+   
+   button:active:before {
+    background: #b9b9b9;
+   }
+
+
+   /* style for second phase css */
+
+   .second{
+       width: 100%;
+       border: 0px solid red;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       box-sizing: border-box;
+   }
+
+   .second section{
+       width: 50%;
+       border: 0px solid red;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .second section h2{
+       width: 80%;
+       text-align: left;
+   }
+
+   .second section p{
+    width: 80%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+   .second section img{
+       width: 60%;
+   }
+
+   /* style for get started */
+
+   .get{
+       width: 100%;
+       box-sizing: border-box;
+       display: flex;
+       flex-direction: column;
+       border: 0px solid red;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .get div{
+       width: 80%;
+       border: 0px solid blue;
+       margin: auto;
+       margin-top: 1%;
+   }
+
+   .get div p{
+       text-align: center;
+       text-transform: capitalize;
+       padding-top: 1%;
+   }
+
+   .get div h2{
+       color: #333333;
+   }
+
+   .get #diva{
+       width: 80%;
+       border: 0px solid red;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       margin-top: 2%;
+   }
+
+   .get #diva section{
+       width: 30%;
+       border: 0px solid red;
+   }
+
+   .get #diva section img{
+       width:30%;
+       margin-left: 35%;
+   }
+
+   .get #diva section p{
+       text-align: center;
+   }
+
+   /* style for choose plan */
+
+   .choose{
+       width: 100%;
+       border: 0px solid red;
+       box-sizing: border-box;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   
+
+   .choose section{
+       width: 27%;
+       border-bottom: 4px solid #333333;
+       margin: 1%;
+       background-color: #ffffff;
+       margin-top: 7%;
+       box-shadow:0px 0px 20px darkgrey;
+   }
+
+   .choose section:hover{
+       border-color: #004480;
+       color: #004480;
+   }
+
+
+   .choose section div:hover{
+    border-color: #004480;
+    color: #004480;
+   }
+
+   .choose section div h2:hover{
+   color: #004480;
+   }
+
+   .choose section div{
+       width:51%;
+       border:2px solid #4d4d4d;
+       display: flex;
+       flex-direction: column;
+       border-radius: 50%;
+       padding: 40px;
+       margin-left: 25%;
+       text-align: center;
+       text-transform: capitalize;
+   }
+
+   .choose section div h2{
+       font-size:3rem;
+       font-style: italic;
+       font-family:Times New Roman;
+       font-weight: bold;
+   }
+
+   .choose section img{
+       width:80%;
+       margin-left:10%;
+       margin-top: 4%;
+   }
+
+   .choose section p{
+       text-align: center;
+       text-transform: capitalize;
+       font-size: 1.5rem;
+       line-height: 130%;
+       color: #004480;
+   }
+
+   .choose section h2{
+       margin-top: 4%;
+       margin-bottom: 2%;
+   }
+
+   /* style for button on choose a plan phase */
+
+  .button {
+     width: 140px;
+     height: 45px;
+     font-size: 23px;
+     cursor: pointer;
+     border: none;
+     outline: none;
+     background: transparent;
+     color:#004480;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: 700;
+     position: relative;
+     right:0;
+     transition: all 0.5s;
+     z-index: 1;
+     text-transform: capitalize;
+     margin-left: 33%;
+    }
+    
+    .button::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 5px;
+     height: 100%;
+     background-color:#004480;
+     z-index: -1;
+     transition: all 0.5s;
+    }
+    
+    .button:hover::before {
+     width: 100%;
+    }
+    
+    .button:hover {
+     color: white;
+    }
+    
+    .button:active:before {
+     background: #b9b9b9;
+    }
+
+    /* style for calculator */
+
+    .cal{
+        width: 100%;
+        border:0px solid red;
+        padding: 1%;
+    }
+
+    .cal form{
+        width:95%;
+        border:0px solid blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+        flex-wrap: wrap;
+        padding:2%;
+        /* box-shadow: 0px 0px 5px grey; */
+    }
+
+    .cal form input{
+        width: 22%;
+        padding: 5px;
+        text-transform: capitalize;
+        /* text-align: center; */
+        outline: none;
+        background-color: inherit;
+        border: 1px solid gray;
+    }
+
+    /* style for faq */
+
+.faq{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px solid red;
+}
+
+.faq .giv{
+    width: 80%;
+    margin: auto;
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq .giv p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.faq .giv div{
+    border: 0px solid white;
+    width: 100%;
+}
+
+.faq .giv .astdiv h3{
+    font-size: 1.2rem;
+}
+
+.faq .giv .astdiv h2{
+    font-size: 2rem;
+    font-weight: normal;
+    color: #333333;
+}
+
+/* new style for faq */
+.anddiv .wrapper {
+    width: 60%;
+  }
+  
+.anddiv .contan {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    margin: 20px 0;
+  }
+
+  .anddiv .question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px 80px 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #004480;
+    color: white;
+  }
+  
+  .anddiv .question::after {
+    content: "\002B";
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+  }
+  
+  .anddiv .question.active::after {
+    transform: rotate(45deg);
+  }
+  
+  .anddiv .answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .anddiv .answer {
+    padding: 0 20px 20px;
+    line-height: 1.5rem;
+  }
+  
+  /* .anddiv .question.active + .anddiv .answercont { */
+  /* } */
+  
+
+
+.faq .giv .anddiv section{
+    width: 100%;
+    border: 1px solid #004480;
+    margin-top:1%;
+    background-color: #fff;
+    color: #fff;
+    border: 0px solid red;
+}
+
+
+.faq .giv .anddiv section span{
+    display: flex;
+    flex-direction:row;
+    cursor: none;
+}
+
+.faq .giv .anddiv section h3{
+    color: white;
+    text-align: left;
+    background-color: #004480;
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.faq .giv .anddiv section h2{
+    color: white;
+    text-align: right;
+    background-color: #004480;
+    cursor: pointer;
+    border: 0px solid red;
+    width: 20%;
+    font-family: sans-serif;
+    padding: 10px;
+    padding-right: 2%;
+}
+
+.faq .giv .anddiv section p{
+    width: 100%;
+    text-align: center;
+    /* display: none; */
+    height: 0;
+    overflow-y: hidden;
+}
+
+.faq .giv .anddiv section p:focus-visible{
+    width: 100%;
+    text-align: center;
+    display:block;
+}
+    
+
+
+/* style for about us */
+
+.about{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    border: 0px solid red;
+    flex-direction: column;
+}
+
+.about section{
+    width: 100%;
+    border: 0px solid red;
+}
+
+.about section h3{
+    text-align: left;
+    padding-left:4%;
+}
+
+.about section h2{
+    text-align: left;
+    padding-left:4%;
+    font-weight: normal;
+    color: #4d4d4d;
+}
+
+#sect{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sect div{
+    width: 45%;
+}
+
+#sect div img{
+    width: 100%;
+}
+
+#sect div p{
+    text-align: left;
+    font-size: 1rem;
+    padding-top:5%;
+}
+
+/* style for patners */
+
+.patners{
+    width: 100%;
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.patners .img{
+    border: 0px solid red;
+    width: 100%;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.patners .img img{
+    padding-left: 4%;
+}
+
+.patners h2{
+    color:#333333;
+}
+
+/* style for contact us */
+
+.seven{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seven span{
+    width: 100%;
+}
+
+.seven span h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.seven span p{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.seven .man{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.seven .man section{
+    width: 45%;
+    border: 0px solid red;
+    margin-top: 2%;
+}
+
+.man section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.man section form span{
+    border: 0px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.man section form span input{
+    width: 48%;
+}
+
+.man section form input,.man section form textarea{
+    background-color: inherit;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid #333333;
+    margin-top:4%;
+}
+
+.man section form .butt{
+    background-color: #004480;
+    color: white;
+    font-weight: bold;
+}
+
+.man section form .butt:hover{
+    background-color: #001b33;
+    color: white;
+    border: 0px;
+}
+
+.seven #spat{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top:1%;
+}
+
+.seven #spat span{
+    border: 0px solid red;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.seven #spat span #icon{
+    width: 5%;
+    border-right:1px solid #333333;
+}
+
+.seven #spat span #icon i{
+    font-size: 8;
+    color: #004480;
+}
+
+.seven #spat span #tet{
+    width: 85%;
+    padding-left:5px;
+}
+
+.seven #spat span #tet h5{
+    color: #004480;
+    text-transform: capitalize;
+}
+
+.seven #spat span #tet p{
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* style for stastics */
+
+.stat{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.stat section{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stat #count{
+    background-color:inherit;
+    width: 100%;
+    border: 0px solid blue;
+}
+
+.stat #count div{
+    width: 20%;
+    box-shadow: 0px 0px 0px ;
+    border: 0px solid red;
+    margin-bottom:4%;
+}
+
+.stat #count div p{
+    color: #004480;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 0px solid red;
+}
+
+.stat #count div i{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    border: 0px solid red;
+    font-size: 9rem;
+    text-align: center;
+    color: #004480;
+}
+
+.stat #nill div{
+    width: 45%;
+    border: 0px solid blue;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.stat #nill div h3{
+    background-color: #004480;
+    color: white;
+    padding: 1%;
+}
+
+.stat #nill div span{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+    padding-bottom: 1%;
+}
+
+.stat #nill div span p{
+    text-transform: capitalize;
+    text-align:left;
+    width: 33%;
+}
+
+.stat #nill div span i{
+    color: #004480;
+    text-align: left;
+}
+
+/* style for review css */
+
+#kit{
+    width: 100;
+}
+
+ #kit p{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+ }
+
+
+.review{
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: scroll;
+}
+
+.review .over{
+    width: 150%;
+    border: 0px solid blue;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom:3%;
+}
+
+.review .over section{
+    width: 30%;
+    border: 0px solid red;
+    margin-left:1%;
+    color: #333333;
+    text-align: left;
+    padding: 1%;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.review .over section:hover{
+    border-color: #004480;
+    color: #004480;
+    border: 1px solid;
+    box-shadow: 0px 0px 0px grey;
+}
+
+/* style for coin market */
+
+.frameed{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.frameed .coin,.frameed .coinx{
+    width: 100%;
+}
+
+/* style for find advisor page */
+
+/* 
+.boom{
+    background-image: url(img/pexels.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:top;
+    object-fit: cover;
+    width: 100%;
+    height:80vh;
+} */
+
+.regf{
+    border: 0px solid red;
+    width: 70%;
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    margin: auto;
+    margin-top:5%;
+    box-shadow: 0px 0px 20px grey;
+    margin-bottom:5%;
+}
+
+.regf h2{
+    width: 100%;
+    border: 1px solid #333333;
+    border-radius: 20px 20px 0px 0px;
+    text-align: left;   
+    text-indent:20px;
+    padding: 1%;
+    background-color: #004480;
+    border-color: #004480;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.regf section{
+    width: 100%;
+    padding:1%;    
+    margin-bottom:2%;
+    margin-top: 2%;
+}
+
+.regf section h1{
+    text-align: left;
+    text-indent:5%;
+}
+
+.regf section p{
+    text-transform: capitalize;
+    padding-top: 10px;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.regf form section{
+    width: 80%;
+    margin-left:5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.regf form section input{
+    width:48%;
+    padding: 10px;
+    text-transform: capitalize;
+    outline: none;
+    border: 0px;
+    border-bottom:2px solid #004480;
+}
+
+.regf form #bnt{
+    border: 0px solid blue;
+    width: 30%;
+}
+
+.regf form #bnt input{
+    background-color: #004480;
+    color: white;
+    width:40%;
+}
+
+.regf form p{
+    text-transform: capitalize;
+    text-indent: 30px;
+    padding: 1%;
+    padding-top: 0%;
+    box-sizing: border-box;
+}
+
+
+.login{
+width: 100%;
+display: flex;
+flex-direction:column;
+transition: ease-in-out 0.4s;
+scale: 1;
+}
+
+.login .fot{
+    width: 60%;
+    margin: auto;
+    padding: 1%;
+    margin-top:11%;
+    cursor: pointer;
+}
+
+.login .fot form{
+    width: 100%;
+    box-shadow: 0px 0px 20px grey;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+.login .fot form input{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 10px;
+    outline: none;
+}
+
+.login .fot form #log{
+    background-color: #004480;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 0px;
+}
+
+.login .fot form #log:hover{
+    color: #004480;
+    background-color: white;
+    border: 2px dashed #004480;
+}
+
+.login p{
+    text-transform: capitalize;
+    text-indent: 40px;
+    padding-top: 10px;
+    padding-bottom: 2%;
+}
+
+.login h1{
+    color: #333333;
+    text-align: left;
+    font-weight:100;
+    text-indent: 20px;
+}
+
+
+/* style for footer */
+
+footer{
+    background-color: #003566;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer div{
+    width: 100%;
+}
+
+footer .foot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .foot section{
+    width: 30%;
+    color: white;
+    padding: 1%;
+}
+
+footer .foot section img{
+    width: 50%;
+    
+}
+
+footer .foot section h1{
+    color: white;
+    text-align: left;
+    font-style: italic;
+    font-family: "Times New Roman";
+}
+
+footer .foot section a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize;
+    padding-top:1%;
+}
+
+footer .foot section a:hover{
+    width:30%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid white;
+}
+
+footer .foot #spanrw div{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+footer .foot #spanrw p{
+    width: 80%;
+    color: white;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+footer .foot #spanrw i{
+    width: 20%;
+    border-radius: 50%;
+    padding:8%;
+    background-color:rgba(153, 206, 255,0.2);
+    color: white;
+}
+
+.last{
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:640px) {
+
+    /* style for header */
+
+    .container{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header{
+        width: 100%;
+        padding: 1%;
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .logo{
+        width:40%;
+    }
+
+    .logo img{
+        width:100%;
+    }
+    
+    .nat{
+        width:40%;
+        border: 0px solid blue;
+    }
+    
+    .nat .dits{
+            width: 50px;
+            border: 0px solid red;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            position: absolute;
+            right:10px;
+            top: 15px;
+          }
+    
+      .dits span{
+        width: 40px;
+        border:2px solid white;
+        margin-top:10%;
+        background-color:white;
+      }
+
+       .nat .dits .two{
+        width: 30px;
+      }
+
+      .side{
+          background-color: white;
+          width:0%;
+          transition: ease-in 0.3s;
+          height: 100%;
+          overflow-x: hidden;
+          z-index: 10;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: block;
+      }
+
+      .side a{
+          text-decoration: none;
+          text-transform: capitalize;
+          display: block;
+          border-bottom:1px solid #004480;
+          padding-bottom: 5%;
+          padding-top: 5%;
+          color: #004480;
+          text-indent: 2%;
+      }
+
+      .side a:active{
+          color: #001b33;
+      }
+
+      .side p{
+          color: #004480;
+          text-align: right;
+          font-size: 3rem;
+          cursor: pointer;
+          z-index:11;
+      }
+
+/* media for home */
+
+.home{
+    width: 100%;
+}
+
+.bod{
+    width: 100%;
+    height: 60vh;
+    /* background-color: red; */
+}
+
+.boom{
+    width: 100%;
+    height: 60vh;
+}
+
+.text{
+    align-items: center;
+    width: 100%;
+}
+
+.text h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.text h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.text p{
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.text .frame{
+    top: 49vh;
+}
+
+button {
+    background-color: #004480;
+}
+
+.nice{
+    width: 100%;
+    padding: 5%;
+}
+
+.second{
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.second section{
+    width:100%;
+}
+
+.second section p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.second section h2{
+    text-align: center;
+}
+
+.get{
+    width: 100%;
+}
+
+.get #diva{
+    flex-direction: column;
+}
+
+.get #diva section{
+    width: 100%;
+}
+
+/* style for choose plan */
+
+.choose{
+    width: 100%;
+    flex-direction: column;
+}
+
+.choose section{
+    width: 80%;
+    margin: auto;
+    margin-top:7%;
+    border-bottom: 4px solid #333333;
+    color: #004480;
+}
+
+.choose section div{
+    width:50%;
+    border:2px solid #004480;
+    padding: 20px;
+}
+
+.choose section p{
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+/* style for button on choose a plan phase */
+
+.button {
+    background-color: #004480;
+    color: white;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+/* style for faq */
+
+.faq{
+    width: 100%;
+}
+
+.faq .giv{
+    width: 95%;
+}   
+
+.faq .giv .astdiv h2{
+    font-size: 1.4rem;
+}
+
+.faq .giv .anddiv section{
+    width: 100%;
+    border: 1px solid #004480;
+    margin-top:2%;
+}
+
+.faq .giv .anddiv section h3{
+    width:90%;
+    font-size: 1rem;
+}
+
+.faq .giv .anddiv section h2{
+    width: 10%;
+}
+
+/* style for about us */
+
+.about{
+    width: 100%;
+}
+
+.about section{
+    width: 100%;
+}
+
+.about section h3{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.about section h2{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#sect{
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+#sect div{
+    width: 100%;
+}
+
+#sect div img{
+    width: 100%;
+    margin-top:5%;
+}
+
+#sect div p{
+    text-align:center;
+    font-size: 1rem;
+    padding-top:5%;
+    padding: 1%;
+    padding-bottom: 4%;
+}
+
+.patners{
+    width: 100%;
+}
+
+.patners .img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.patners .img img{
+    margin-top: 4%;
+    width: 40%;
+}
+
+/* style for contact us */
+
+.seven{
+    border: 0px solid red;
+}
+
+.seven span{
+    width: 100%;
+}
+
+.seven .man{
+    flex-direction:column;
+    width: 100%;
+}
+
+.seven .man section{
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.seven #spat{
+    width: 100%;
+    padding-top:1%;
+}
+
+.man section form .butt{
+    background-color: #004480;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
+    margin-top:4%;
+}
+
+/* style for stastics */
+
+.stat{
+    width: 100%;
+    border: 0px solid red;
+}
+
+.stat section{
+    width: 100%;
+}
+
+
+.stat #count div{
+    width:80%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.stat #count div p{
+    font-size: 1.4rem;
+}
+
+.stat #count div i{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 7rem;
+}
+
+.stat #nill div{
+    width: 95%;
+    margin-top:5%;
+    margin-bottom: 2%;
+}
+
+.stat section div h3{
+    padding:2%;
+}
+
+/* style for review css */
+
+#kit{
+    width: 100;
+}
+
+ #kit p{
+    font-size: 1.6rem;
+ }
+
+
+.review{
+    width: 100%;
+    border: 0px solid red;
+}
+
+.review .over{
+    width: 250%;
+}
+
+.review .over section{
+    width: 50%;
+    margin-right: 2%;
+}
+
+/* style for coin market */
+
+.frameed .coin,.frameed .coinx{
+    border: 0px solid red;
+    width: 100%;
+}
+
+/* style for footer */
+
+footer .foot section{
+    width: 90%;
+    margin-top: 4%;
+}
+
+/* style for find advisor */
+
+.regf{
+    width: 95%;
+    margin-top:20%;
+}
+
+.regf h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding:5%;
+}
+
+.regf section p {
+    padding-top: 5px;
+    width: 100%;
+    font-size: .9rem;
+    margin-left:2%;
+}
+
+
+
+.regf form section{
+    width:95%;
+    margin-left:5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.regf form section input{
+    width:90%;
+}
+
+.regf form #bnt{
+    width:80%;
+}
+
+.regf form #bnt input{
+    background-color: #004480;
+    color: white;
+    width:40%;
+
+}
+
+.regf section h1{
+    text-indent: 0px;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 2%;
+}
+
+.regf h2{
+    font-size:1.1rem;
+    text-align:left;
+    padding:4%;
+}
+
+.regf form p{
+    font-size: .9rem;
+}
+
+.login{
+    margin-top:40%;
+}
+
+.login .fot{
+    width:90%;
+    margin: auto;
+}
+
+.login p{
+    font-size: .9rem;
+    box-sizing: border-box;
+    text-indent: 10px;
+}
+
+
+
+
+
+
+
+
+}
