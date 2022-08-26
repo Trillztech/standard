@@ -88,19 +88,15 @@ require 'select.php';
 <span>
     <h3>last Deposit</h3>
     <h3>last withdrawal</h3>
-    <h3>active deposit</h3>
     <h3>total Deposits</h3>
     <h3>total withdrawals</h3>
-    <h3>status</h3>
 </span>
 
 <span>
-    <p>$0.00</p>
-    <p>$0.00</p>
-    <p>$0.00</p>
-    <p>$0.00</p>
-    <p>$0.00</p>
-    <p>pending</p>
+    <p>$<?php echo $last_depo; ?></p>
+    <p>$<?php echo $last_with; ?></p>
+    <p>$<?php echo $total_depo; ?></p>
+    <p>$<?php echo $total_with; ?></p>
 </span>
 
 </section>

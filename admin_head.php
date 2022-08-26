@@ -40,6 +40,11 @@ require 'select.php';
             </section>
 
             <section>
+                <a href="pending_transfer.php">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i> &nbsp pending transfer</a>
+            </section>
+
+            <section>
                 <a href="users.php">
                 <i class="fa-solid fa-gear"></i> &nbsp view users</a>
             </section>
@@ -89,8 +94,7 @@ require 'select.php';
     </span>
 
     <span>
-    <i class="fas fa-envelope"></i><sup style="color:red;
-     position:absolute; left:70%"><?php echo $sum; ?></sup>
+    <i class="fas fa-envelope"><sup style="color:red; font-size:1rem;"><?php echo $sum; ?></sup></i>
     </span>
 
     <span>
@@ -126,6 +130,11 @@ require 'select.php';
             <section>
                 <a href="pending_withdraw.php">
                 <i class="fas fa-hand-holding-usd"></i> &nbsp pending withdraw</a>
+            </section>
+
+            <section>
+                <a href="pending_transfer.php">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i> &nbsp pending transfer</a>
             </section>
 
             <section>

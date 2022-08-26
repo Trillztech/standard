@@ -1,12 +1,7 @@
 <?php 
 session_start();
 $_SESSION['name']=$_POST['nome'];
-$_SESSION['email']=$_POST['eemail'];
-
-// if (isset($_POST['register'])) {
-//     require 'action.php';
-//  }
- 
+$_SESSION['email']=$_POST['eemail']; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +16,7 @@ $_SESSION['email']=$_POST['eemail'];
 <body>
     <?php
     require 'connect.php';
-    // require 'submit.php';
+    require 'submit.php';
     ?>
 
 
@@ -49,12 +44,15 @@ if (isset($_POST['register'])) {
                     <input type="email" placeholder="refferal email" name="ref_mail" style="text-transform:lowercase;" value="<?php echo @$_POST['ref_mail'];?>">
                 </section>
                 <section>
+                    <input type="text" name="ntry" placeholder="country" value="<?php echo @ $_POST['ntry'];?>" style="width:90%" id="try">
+                </section>
+                <section>
                     <input type="password" name="pass" id="pass" placeholder="password" value="<?php echo @ $_POST['pass'];?>">
                     <input type="password" name="cword" id="pass" placeholder="confirm password" value="<?php echo @$_POST['cword'];?>">
                 </section>
 
                 <section id="bnt">
-                    <input type="submit" value="cancel">
+                    <input type="submit" value="cancel" name="cancel">
                     <input type="submit" value="register" name="register">
                 </section>
         <p>Already have an account ? <a href="login.php">login</a></p>

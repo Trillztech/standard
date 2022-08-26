@@ -17,11 +17,11 @@ $sql = $conn -> query($upp);
 
 
     if($sql) {
-        echo '<script>alert("Withdrawal Confirmed 👍️");window.location="pending_withdraw.php";</script>';
+            echo "<script>window.location='pending_withdraw.php';</script>";
     }
 
     else {
-        echo '<script>alert("Withdrawal denied🚫️");window.location="pending_withdraw.php";</script>';
+            echo "<script>window.location='pending_withdraw.php';</script>";
     }
     
     

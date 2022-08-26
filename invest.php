@@ -84,9 +84,13 @@ require('restriction.php');
 </form>
    </section>
 
-<div class="cal" onchange="selectcoin()">
-
-<form action="investx.php" method="post" name="myforms">
+<div class="cal">
+<p><?php
+if (isset($_POST['subvest'])) {
+    require 'investx.php';
+}
+?></p>
+<form action="" method="post" name="myforms">
 <select name="selectform" id="set"  onchange="selectcoinx()" onblur="showTextbox()">
 <option value="Select A Plan">Select A Plan</option>
 <option value="Basic Plan" >Basic Plan</option>
@@ -100,7 +104,7 @@ require('restriction.php');
 
 <input type="text" name="percentage_name" id="cent" placeholder="0%" readonly>
 <input type="number" name="roi" id="roi" placeholder="ROI" readonly>
-<input type="submit" value="invest" id="subvest">
+<input type="submit" value="invest" id="subvest" name="subvest">
 </div>
 
 </form>

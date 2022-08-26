@@ -42,7 +42,7 @@ else{?>
 
     <input type="password" name="pass" value="<?php echo $row['password'];?>" placeholder="<?php echo $row['password'];?>">
 
-    <input type="password" name="cword" placeholder="confrim password" value="confrim password">
+    <input type="password" name="cword" placeholder="confrim password" value="<?php echo $row['password'];?>">
 
     <input type="text" name="btcoin" value="change btc wallet" placeholder="change btc wallet">
 

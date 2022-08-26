@@ -2,26 +2,10 @@
 session_start();
 
 // submit for user reg tab
-
-// if (isset($_POST['register'])) {
-//     require 'action.php';
-//  }
- 
-//  if (isset($_POST['cancel'])) {
-
-//     header("location:index.php");
-//  }
+ if (isset($_POST['cancel'])) {
+    header("location:index.php");
+ }
 //  end
-
-
-
-// submit for admin reg tab
-if (isset($_POST['reg'])) {
-   require 'adminreg_action.php';
-}
-// end
-
-
 
 //  submit for block user 
  $idd = $_POST['id']; 
@@ -29,16 +13,7 @@ if (isset($_POST['reg'])) {
    $upt="update user_tab set 
    block = 'blocked'
    WHERE id = '$idd' ";
-   $done = $conn->query($upt);
-
-   // if ($done) {
-   //    echo '<script> confirm("Are you sure you want to Block User");</script>';
-   // }
-
-   // else {
-   //    echo 'not done';
-   // }
-    
+   $done = $conn->query($upt); 
  }
 //  end
 
@@ -51,15 +26,6 @@ if (isset($_POST['Unblock'])) {
   block = ''
   WHERE id = '$idd' ";
   $tdone = $conn->query($udt);
-
-//   if ($tdone) {
-//      echo '<script> confirm("Are you sure you want to Unblock User");</script>';
-//   }
-
-//   else {
-//    echo '<script> alert("Could not Unblock User");</script>';
-//   }
-   
 }
 //  end
 

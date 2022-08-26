@@ -58,7 +58,7 @@ if ($num>0) {?>
         border:0px solid red;
         margin:auto;
         color:red;
-        text-align:center;">No messages 🚫️</div>';
+        text-align:center;">No Downline Yet 🚫️</div>';
     }
     ?>
 </div>

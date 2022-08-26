@@ -35,7 +35,6 @@ $(document).ready(function(){
 
 
 //    script for dashboard
-
 function openclosex() {
     var jee = document.getElementById('menu');
     var dee = document.getElementById('xbodyx');
@@ -110,8 +109,8 @@ function guiity() {
 // end
 
 
-    // script for calculator
 
+    // script for investment
     function selectcoinx(){
         var plan = document.myforms.selectform.value;
         switch(plan){
@@ -155,6 +154,42 @@ function guiity() {
         }
         }
 
+
+
+    function xelectcoinxyx(){
+        var plan = document.myforms.selectform.value;
+        switch(plan){
+        case 'Select A Plan':
+        document.myforms.percentage_name.value="0";
+        break;
+        
+        case 'Basic Plan':
+        document.myforms.percentage_name.value="10";
+        break;
+        
+        case "Regular Plan":
+        document.myforms.percentage_name.value="12";
+        break;
+        
+        case "Standard Plan":
+        document.myforms.percentage_name.value="15";
+        break;
+        
+        case "Premium Plan":
+        document.myforms.percentage_name.value="18";
+        break;
+        
+        case "Gold Plan":
+        document.myforms.percentage_name.value="20";
+        break;
+        
+        case "Diamond Plan":
+        document.myforms.percentage_name.value="25";
+        break;
+        
+        
+        }
+        }
             function get_total(){
                 per=(document.myforms.percentage_name.value/100)*document.myforms.amount.value;
                 document.myforms.roi.value=parseInt(document.myforms.amount.value)+ parseInt(per);
@@ -171,25 +206,25 @@ function guiity() {
         case 'btc':
         document.base_wallet.reciver_wallet.value="1CnoLhEQ35RQUTUkjEybwiRgtayhZs9JRb";
         document.base_wallet.network.value="btc";
-        document.getElementById('address').innerHTML='<input type="text" id="add" value="1CnoLhEQ35RQUTUkjEybwiRgtayhZs9JRb"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
+        document.getElementById('address').innerHTML='<a href="https://www.bitcoinqrcodemaker.com"><img src="https://www.bitcoinqrcodemaker.com/api/?style=bitcoin&amp;address=1CnoLhEQ35RQUTUkjEybwiRgtayhZs9JRb" alt="Bitcoin QR Code Generator" height="300" width="300" border="0" /></a><input type="text" id="add" value="1CnoLhEQ35RQUTUkjEybwiRgtayhZs9JRb"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
         break;
         
         case "eth":
-     document.base_wallet.reciver_wallet.value="0xfCCa72383407711c447c5654341caD0361f3";
+     document.base_wallet.reciver_wallet.value="0xfCCa72383407711c447c5654341c941caD0361f3";
      document.base_wallet.network.value="Erc20";
-     document.getElementById('address').innerHTML='<input type="text" id="add" value="0xfCCa72383407711c447c5654341caD0361f3"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
+     document.getElementById('address').innerHTML='<a href="https://www.bitcoinqrcodemaker.com"><img src="https://www.bitcoinqrcodemaker.com/api/?style=ethereum&amp;address=0xfCCa72383407711c447c5654341c941caD0361f3" alt="Ethereum QR Code Generator" height="300" width="300" border="0" /></a><input type="text" id="add" value="0xfCCa72383407711c447c5654341c941caD0361f3"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
         break;
         
         case "bnb":
     document.base_wallet.reciver_wallet.value="0xfCCa72383407711c447c5654341c941caD0361f3";
     document.base_wallet.network.value="bnb bep20";
-    document.getElementById('address').innerHTML='<input type="text" id="add" value="0xfCCa72383407711c447c5654341c941caD0361f3"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
+    document.getElementById('address').innerHTML='<img src="img/Binance_QR.png" alt="file format not supported" height="300" width="300" border="0" ><input type="text" id="add" value="0xfCCa72383407711c447c5654341c941caD0361f3"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
         break;
         
         case "usdt":
     document.base_wallet.reciver_wallet.value="TVUQSEcdW4mA6VAh8YgKziY7mQn9LHSkpq";
     document.base_wallet.network.value="usdt Trc20";
-    document.getElementById('address').innerHTML='<input type="text" id="add" value="TVUQSEcdW4mA6VAh8YgKziY7mQn9LHSkpq"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
+    document.getElementById('address').innerHTML='<img src="img/Tether_QR.png" alt="file format not supported" height="300" width="300" border="0" ><input type="text" id="add" value="TVUQSEcdW4mA6VAh8YgKziY7mQn9LHSkpq"><input type="submit" value="Copy" onclick="poppyx()" id="btn-cpy">';
         break;
         
         

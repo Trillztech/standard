@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/log.png" type="image/x-icon">
-    <title>homepage</title>
+    <title>Minexlimited</title>
 </head>
 
 <body onload="typeWrite()">
 
     <!-- <div class="container"> -->
 
-    <header data-aos="fade-up">
+    <header>
         <?php require 'header.php'; ?>
     </header>
     
@@ -22,17 +22,16 @@
     <div class="home">
 
     <div class="bod">
-         <div class="text" data-aos="fade-down">
+         <div class="text" data-aos="fade-down " data-aos-duration="6000">
 
              <h1 id="iwords2"></h1>
-             <h2></h2>
              <p data-aos="zoom-in">Build your dreams with minexLimited Investment Company
               Start Your Bitcoin Investment Today!
               We are here to make your dream successful. You made the right choice to grow with us. Just Enjoy Our Best Rates While We Are Doing The Rest For You</p>
               
              <a href="login.php"><button>log in</button></a>
         <div class="frame">
-             <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+             <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0; poniter-event:none;"></iframe>
                 </div>
                 <script>
 // script for typewrite
@@ -64,7 +63,7 @@ function typeWrite(){
         <p>MinexLimited.com is offering management of finances based on fixed conditions. Our team has developed the highly profitable investment plans with one-time accruals of income after a certain period.</p>
     </section>
 
-    <section data-aos="fade-left">
+    <section data-aos="fade-in">
         <img src="img/5580755.png" alt="file format not supported">
     </section>
 </div>
@@ -72,6 +71,7 @@ function typeWrite(){
 <!-- get started -->
 <div class="nice" id="how"></div>
 <div class="nice" id="how"></div>
+
 <div class="get">
 <div data-aos="zoom-in">
 <h3>how it works</h3>
@@ -190,11 +190,11 @@ function typeWrite(){
 
 <div class="nice"></div>
 
-<div class="cal" onchange="selectcoin()" data-aos="fade-up"
+<div class="cal" data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">
 
     <form action="#" method="post" name="myforms">
-  <select name="selectform" id="set"  onchange="selectcoinx()">
+  <select name="selectform" id="set"  onchange="xelectcoinxyx()">
   <option value="Select A Plan">Select A Plan</option>
   <option value="Basic Plan" >Basic Plan</option>
   <option value="Regular Plan" >Regular Plan</option>
@@ -205,7 +205,7 @@ function typeWrite(){
   </select>
 
 <input type="number" name="amount" id="amt" placeholder="$amount" onkeyup="get_total()" >
-  <input type="text" name="percentage_name" id="cent" value="0%" readonly>
+  <input type="text" name="percentage_name" id="cent" value="" readonly>
   <input type="number" name="roi" id="roi" placeholder="ROI" readonly>
   </div>
   </form>
@@ -213,47 +213,43 @@ function typeWrite(){
 
 
 <!-- faq section -->
-
 <div class="nice" id="faq"></div>
 <div class="nice"></div>
 
-<div class="faq">
+<div class="faq" data-aos="fade-up">
 <div class="giv">
 
-<div class="astdiv" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+<div class="astdiv">
         <h3>FAQS</h3>
         <h2>Frequently Asked Questions</h2><br>
         <p>Frequently asked questions (FAQ) or Questions and Answers (Q&A), are listed questions and answers, all supposed to be commonly asked in some context</p><br><br><br>
     </div>
 
     <div class="anddiv">
-<div class="wrapper" data-aos="zoom-in">
-  <div class="contan" data-aos="zoom-in-right">
+<div class="wrapper">
+
+  <div class="contan">
     <div class="question">
     What is MinexLimited investment company ?
     </div>
     <div class="answercont">
-      <div class="answer"><br><br>A. &nbsp MinexLimited provide an approach to managing your wealth which provides expertise and the flexibility to help you achieve the life style you desire.
-<br><br><br>
-      We are acredited trading company with 5 years in a forex market. We introduce MinexLimited Investment platform and technology to help users who can not trade profitably in a forex market to earn by investing in our platform.
-
+      <div class="answer"><br><br>A. &nbsp MinexLimited provide an approach to managing your wealth which provides expertise and the flexibility to help you achieve the life style you desire.<br><br><br>
+      We are acredited trading company with 2 years in a forex market. We introduce MinexLimited Investment platform and technology to help users who can not trade profitably in a forex market to earn by investing in our platform.
       </div>
     </div>
   </div>
   
-  <div class="contan" data-aos="zoom-in-left">
+  <div class="contan">
     <div class="question">
     How Do I Get started ?
     </div>
     <div class="answercont">
       <div class="answer"><br><br>A. &nbsp To get started with MinexLimited Investment company, you will navigate to find advisor fill in your details. >>> verify your email address and login to your dashbaord.<br><br>
-
       </div>
     </div>
   </div>
   
-  <div class="contan" data-aos="zoom-in-right">
+  <div class="contan">
     <div class="question">
     How Do I Make Deposit To My Account After Signup ?
     </div>
@@ -264,20 +260,20 @@ function typeWrite(){
     </div>
   </div>
   
-  <div class="contan" data-aos="zoom-in-left">
+   <div class="contan">
     <div class="question">
     How Long will it take me to withdraw my earning ?
     </div>
     <div class="answercont">
       <div class="answer"><br><br> A. &nbsp In MinexLimited withdrawal interval is within a given period of plan you selected. You will always have continus withdrawal as long as you have active investment in the system.
 <br><br>
-
       </div>
     </div>
   </div>
-  </div>
 </div>
-  </div>
+</div>
+</div>
+</div>
 
   <script>
 
@@ -302,27 +298,25 @@ answer.style.maxHeight = 0;
   </script>
 
 <!-- about us  -->
-
 <div class="nice" id="about"></div>
 <div class="nice"></div>
 
-<div class="about">
-
-<section data-aos="fade-down">
+<div class="about" data-aos="fade-down">
+<section>
     <h3>the MinexLimited financial</h3>
     <h2>about the MinexLimited financial</h2>
 </section>
 
 <section id="sect">
 
-    <div data-aos="fade-up">
-        <p>MinexLimited Investment is an investment company  Incorporated in the year 2016.
+    <div>
+        <p>MinexLimited Investment is an investment company  Incorporated in the year 2020.
 
 We provide an approach to managing your wealth which provides expertise and the flexibility to help you achieve the life style you desire.
 </p>
 
 <p>
-We are acredited trading company with 6 years in a forex market. We introduce MinexLimited Investment platform and technology to help users who can not trade profitably in a forex market to earn by investing in our platform.</p>
+We are acredited trading company with 2 years in a forex market. We introduce MinexLimited Investment platform and technology to help users who can not trade profitably in a forex market to earn by investing in our platform.</p>
 
 <p>
 We indulge ourselves with Real Estate Investment, Crypto Currency Investment, Forex Trading.
@@ -331,7 +325,7 @@ Bitivest allow investors to participate and benefit from the company using four 
 MinexLimited have six(6) major mining packages; All packages mature within the specify period.</p>
     </div>
 
-    <div data-aos="fade-left">
+    <div>
         <img src="img/IMG_0264.PNG" alt="file format not supported">
     </div>
 
@@ -342,8 +336,8 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
 
 <div class="nice"></div>
 
-<div class="patners">
-    <div data-aos="fade-down">
+<div class="patners" data-aos="fade-down">
+    <div>
         <h3>patners</h3>
         <h2>our most trusted clients</h2>
     </div>
@@ -361,16 +355,16 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
 <div class="nice" id="contact"></div>
     <div class="nice"></div>
 
-<div class="seven">
+<div class="seven" data-aos="fade-down-right">
 
-    <span data-aos="fade-down-right">
+    <span>
     <h4>contact us</h4>
     <p>get in touch!</p>
     </span>
 
     <div class="man">
 
-        <section data-aos="zoom-in">
+        <section>
             <form action="" method="post">
                 <span>
                 <input type="text" placeholder="name*" name="name">
@@ -388,7 +382,7 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
             </form>
         </section>
 
-        <section id="spat"data-aos="zoom-in-left">
+        <section id="spat">
 
             <span>
                 <section id="icon">
@@ -397,7 +391,7 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
 
         <section id="tet">
              <h5>email</h5>
-            <p>support@sitename.com</p>
+            <p><a href="mailto:support@minexlimited.com">support@minexlimited.com</a></p>
         </section>
            
             </span>
@@ -409,7 +403,7 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
 
         <section id="tet">
             <h5>address</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+            <p>44 PRIORY ROAD LONDON UNITED KINGDOM NW6 4SJ</p>
         </section>
 
             </span>
@@ -431,18 +425,11 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
     </div>
 
     <!-- html for statics -->
-
     <div class="nice"></div>
 
-    <div class="stat">
+    <div class="stat"data-aos="zoom-in-left">
 
-        <section id="count" data-aos="zoom-out-down">
-            
-            <div onscroll="guiity()">
-            <i class="fa fa-calendar-check-o" aria-hidden="true"></i><br>
-                <p  id="could">4345</p>
-                <p> running days</p>
-            </div>
+        <section id="count">
 
             <div>
             <i class="fa fa-user-plus" aria-hidden="true"></i><br>
@@ -469,11 +456,11 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
         <section id="nill" data-aos="fade-up"
      data-aos-duration="3000">
 
-            <div id="ram" data-aos="zoom-out-right">
+            <div id="ram">
          <?php require 'last_depo.php';?>
             </div>
 
-            <div id="ray" data-aos="zoom-out-left">
+            <div id="ray">
          <?php require 'last_with.php';?>
             </div>
             </div>
@@ -492,9 +479,7 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
     </div>
 
 <div class="review">
-    <div class="over" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+    <div class="over">
         <section>
             " <br>
             Just to say many thanks for a very positive meeting yesterday. Hilly and i came away feeling well satisfied that we are able to continue enjoying life without too much stress on the old finances and should be able to carry on with our present lifestyle for some time to come. Very satisfied with the way you are managing affairs and hope this will continue into the future. <br>
@@ -512,11 +497,12 @@ MinexLimited have six(6) major mining packages; All packages mature within the s
     </div>
 </div>
 
+<!-- div containing certificate -->
+<div class="certificate">
+    <img src="img/cert.png" alt="file format not supported">
+</div><br>
+
 <!-- coin market -->
-
-<div class="nice"></div>
-<div class="nice"></div>
-
 <div class="frameed" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
 <div class="coin">

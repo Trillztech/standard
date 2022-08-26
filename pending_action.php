@@ -21,11 +21,25 @@ if ($done) {
     $sql = $conn -> query($upp);
 
 if($sql) {
-    echo '<script>alert("Account Successfully funded 👍️");window.location="pending_deposit.php";</script>';
+    echo '<p style="
+    width:80%;
+    border:0px solid red;
+    margin:auto;
+    color:green;
+    text-align:center;">Account Successfully funded 👍️</p>';
+    header("location:pending_deposit.php");
+
 }
 
 else {
-    echo '<script>alert("Invalid Transaction🚫️");window.location="pending_deposit.php";</script>';
+    echo '<p style="
+    width:80%;
+    border:0px solid red;
+    margin:auto;
+    color:red;
+    text-align:center;">Invalid Transaction 🚫️</p>';
+    header("location:pending_deposit.php");
+
 }
 }
 

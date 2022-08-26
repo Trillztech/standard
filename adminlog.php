@@ -29,14 +29,31 @@ $_SESSION['email']=$row['email'];
 
 
 if ($num>=1) {
-    echo '<script>alert("Welcome👍️");window.location="admin_dashboard.php"</script>';
+    echo '<div style="
+    color:green;
+    text-align:center;
+    text-transform:capitalize;
+    padding:2%;
+    box-sizing:border-box;
+    ">Sucessfully welcome 👍️</div>';
+
+    header("location:admin_dashboard.php");
+
 }
 
 else{
-	echo '<script>alert("invalid details 👎️");window.location="adminlogin.php"</script>';
+    echo '<div style="
+    color:red;
+    text-align:center;
+    text-transform:capitalize;
+    padding:2%;
+    box-sizing:border-box;
+    ">Invalid details 👎️</div>';
 }
 
 
 
 $conn->close();
 ?>
+
+

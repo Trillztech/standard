@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 require 'connect.php';
 
 $amt = $_POST['amt'];
@@ -47,11 +46,18 @@ $inn="insert into deposit(
 $sql=$conn->query($inn);
 
 if ($sql) {
-echo"<script>alert('Transaction In Process');window.location='deposit.php';</script>";
+    echo "<script>window.location='transactions.php';</script>";
 }
 
 else{
-echo"<script>alert('Invalid Transaction 🚫️');window.location='deposit.php';</script>";
+echo '<p style="
+color:red;
+text-align:center;
+text-transform:capitalize;
+padding:2%;
+box-sizing:border-box;
+">Invalid Transaction 🚫️</p>';
+
 }
 
 ?>

@@ -34,11 +34,31 @@ $_SESSION['email']=$row['email'];
 
 
 if ($num>=1) {
-    echo '<script>alert("Welcome👍️");window.location="dashboard.php"</script>';
+    // echo '<script>alert("Welcome👍️");window.location="dashboard.php"</script>';
+    echo '<div style="
+    color:green;
+    text-align:center;
+    text-transform:capitalize;
+    padding:2%;
+    box-sizing:border-box;
+    ">Sucessfully welcome 👍️</div>';
+
+    header("location:dashboard.php");
+
 }
 
 else{
-	echo '<script>alert("invalid details 👎️");window.location="login.php"</script>';
+	// echo '<script>alert("");window.location="login.php"</script>';
+
+    echo '<div style="
+    color:red;
+    text-align:center;
+    text-transform:capitalize;
+    padding:2%;
+    box-sizing:border-box;
+    ">Invalid details 👎️</div>';
+    // header("location:login.php");
+
 }
 
 

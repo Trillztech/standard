@@ -44,6 +44,11 @@ require 'balance.php';
             </section>
 
             <section>
+                <a href="transfer.php">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i> &nbsp transfer funds</a>
+            </section>
+
+            <section>
                 <a href="profile.php">
                 <i class="fa-solid fa-gear"></i> &nbsp settings</a>
             </section>
@@ -139,6 +144,11 @@ require 'balance.php';
             <section>
                 <a href="withdraw.php">
                 <i class="fas fa-hand-holding-usd"></i> &nbsp withdraw</a>
+            </section>
+
+            <section>
+                <a href="transfer.php">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i> &nbsp transfer funds</a>
             </section>
 
             <section>

@@ -23,13 +23,18 @@ $_SESSION['email']=$_POST['eemail'];
             <div class="regf">
                 <h2>admin online access</h2>
             <form action="" method="post" name="forms">
+                <div><?php
+if (isset($_POST['reg'])) {
+   require 'adminreg_action.php';
+}
+?></div>
                 <section>
-                    <input type="text" placeholder="name" name="nome">
-                    <input type="email" placeholder="email" name="eemail" style="text-transform:lowercase;">
+                    <input type="text" placeholder="name" name="nome" value="<?php echo @ $_POST['nome'];?>">
+                    <input type="email" placeholder="email" name="eemail" style="text-transform:lowercase;" value="<?php echo @ $_POST['eemail'];?>">
                 </section>
                 <section>
-                    <input type="password" name="pass" id="pass" placeholder="password">
-                    <input type="password" name="cword" id="pass" placeholder="confirm password">
+                    <input type="password" name="pass" id="pass" placeholder="password" value="<?php echo @ $_POST['pass'];?>">
+                    <input type="password" name="cword" id="pass" placeholder="confirm password" value="<?php echo @ $_POST['cword'];?>">
                 </section>
 
                 <section id="bnt">

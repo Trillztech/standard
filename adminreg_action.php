@@ -23,19 +23,47 @@ $confirm = clean($_POST['cword']);
 if ($_SERVER['REQUEST_METHOD']=="POST"){
 		
     if (empty($name)||empty($email)||empty($past)||empty($confirm)){
-        echo "<script>alert('please fill all text fields 🚫️'); window.location='admin_reg.php';</script>";
+        echo '<div style="
+        color:red;
+        text-align:center;
+        text-transform:capitalize;
+        background-color:white;
+        padding:2%;
+        box-sizing:border-box;
+        ">please fill all text fields 🚫️</div>';
     }
 
     elseif (!filter_var($email,FILTER_VALIDATE_EMAIL)){
-        echo '<script>alert("please enter a valid Email address 🚫️"); window.location="admin_reg.php";</script>';
+        echo '<div style="
+        color:red;
+        text-align:center;
+        text-transform:capitalize;
+        background-color:white;
+        padding:2%;
+        box-sizing:border-box;
+        ">please enter a valid Email address 🚫️</div>';
         }
         
         elseif (strlen($pastx)>8){
-            echo '<script>alert("Password should not excced 8 characters 🚫️"); window.location="admin_reg.php";</script>';
+            echo '<div style="
+            color:red;
+            text-align:center;
+            text-transform:capitalize;
+            background-color:white;
+            padding:2%;
+            box-sizing:border-box;
+            ">Password should not excced 8 characters 🚫️</div>';
         }
 
         elseif ($pastx != $confirm) {
-            echo '<script>alert("Password does not match 🚫️"); window.location="admin_reg.php";</script>';
+            echo '<div style="
+            color:red;
+            text-align:center;
+            text-transform:capitalize;
+            background-color:white;
+            padding:2%;
+            box-sizing:border-box;
+            ">Password does not match 🚫️</div>';
         }
 
    else{
@@ -69,11 +97,17 @@ else{
 $sql=$conn->query($inn);
 
 if ($sql) {
-    echo"<script>alert('Sucessfully Registered 👍️');window.location='adminlogin.php';</script>";
+    header('location:admin_dashboard.php');
 }
 
 else{
-    echo"<script>alert('Not Registered 🚫️');window.location='admin_reg.php';</script>";
+    echo '<div style="
+    color:red;
+    text-align:center;
+    text-transform:capitalize;
+    padding:2%;
+    box-sizing:border-box;
+    ">Not Registered 🚫️</div>';
 }
 
 }

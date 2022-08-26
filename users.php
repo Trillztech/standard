@@ -34,6 +34,7 @@ if ($num>0) {?>
     <tr>
                     <th>name</th>
                     <th>balance</th>
+                    <th>location</th>
                     <th>block</th>
                     <th>dash</th>
                     <th>topup</th>
@@ -48,6 +49,10 @@ if ($num>0) {?>
 
 <td>
 $<?php  echo $row['balance']; ?>
+</td>
+
+<td>
+    <?php echo $row['blankk']; ?>
 </td>	
 
 <td>

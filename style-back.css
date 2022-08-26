@@ -208,13 +208,49 @@ body{
     background-color: #b3ffb3;
     width: 20%;
     border-radius: 10px;
-    
+    margin-top: 1%;
  }
 
 .big .body .top section span p{
     padding-top:2%;
     text-transform: capitalize;
     color: 	#333333;
+ }
+
+ .big .body .top section span p button{
+     background-color: #b3dbff;
+     border: 1px;
+     padding: 1%;
+ }
+
+ #input{
+    background-color: #b3dbff;
+    border: 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 1%;
+}
+
+.big .body .top section span #inputx{
+    background-color: #b3dbff;
+    border: 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 1%;
+    width: 25%;
+    margin-top:2%;
+}
+
+.big .body .top section span input{
+    outline: none;
+    border: 0px;
+}
+
+ .big .body .top section span p button a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
  }
 
 .big .body .top section #rou{
@@ -275,8 +311,9 @@ body{
 
 .big .body .lower #iframe iframe{
     width: 100%;
-    overflow-y:auto;
+    overflow-y:hidden;
     scroll-behavior: smooth;
+    pointer-events: none;
 }
 
 .last{
@@ -458,6 +495,10 @@ background-color: white;
     font-weight: bold;
     align-items: right;
     color: black;
+}
+
+.body .pay section span img{
+    margin-left: 20%;
 }
 
 .body .pay section span #btn-cpy{
@@ -733,28 +774,28 @@ background-color: white;
 }
 
 /* style for pending deposit  */
-
 .depo{
     padding: 4%;
-    /* background-color: white; */
     overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 .depo table{
     border: 1px solid #004480;
-    text-align: left;
+    margin: auto;
+    width: 100%;
 }
 
 .depo table tr th{
     background-color: #004480;
     color: white;
     text-transform: capitalize;
-    padding: 10px;
 }
 
 .depo table tr td{
     padding: 5px;
-    font-weight: bold;
+    font-weight: normal;
     color: #004480;
 }
 
@@ -848,6 +889,10 @@ background-color: white;
     border: 0px solid blue;
 }
 
+.big .body .top section span #inputx{
+    width: 45%;
+    margin-top: 4%;
+}
 
 /* style for side div */
 
@@ -1022,7 +1067,6 @@ background-color: white;
 
 
 /* style for settings */
-
 .settings{
     width: 100%;
     margin-top: 10%;
@@ -1078,6 +1122,9 @@ background-color: white;
 /* end */
 
 
+.body .pay section span img{
+    margin-left: 5%;
+}
 
 
 

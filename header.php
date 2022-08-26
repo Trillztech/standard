@@ -13,12 +13,13 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//code-eu1.jivosite.com/widget/8m2yuR6qLI" async></script>
 </head>
 <body>
 
 <div class="container">
 <!-- html for header -->
-    <header>
+    <header data-aos="fade-up">
 
         <div class="logo">
 <a href="index.php"><img src="img/logo.png" alt="file format not supported"></a>

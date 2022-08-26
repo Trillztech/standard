@@ -16,8 +16,8 @@ function clean($data){
     
 $name = clean($_POST['nome']);
 $email = clean($_POST['eemail']);
-// $pastx = clean($_POST['pass']);
 $confirm = clean($_POST['cword']);
+$country = clean($_POST['ntry']);
 $user = clean($_POST['user']);
 $ref = clean($_POST['ref_mail']);
 $balance = "0.00";
@@ -26,7 +26,7 @@ $past= hash('sha256',$pastx);
 
 
 if ($_SERVER['REQUEST_METHOD']=="POST"){
-    if (empty($name)||empty($email)||empty($past)||empty($confirm)||empty($user)){
+    if (empty($name)||empty($email)||empty($past)||empty($confirm)||empty($user)||empty($country)){
         echo '<div style="
         color:red;
         text-align:center;
@@ -111,13 +111,12 @@ else{
         '$balance',
         '',
         '',
-        '',
+        '$country',
         ''
         )";
     $sql=$conn->query($inn);
     
     if ($sql) {
-    // echo"<script>alert('Sucessfully Registered 👍️');window.location='login.php';</script>";
     echo '<div style="
     color:green;
     text-align:center;
@@ -126,12 +125,12 @@ else{
     padding:2%;
     box-sizing:border-box;
     ">Sucessfully Registered 👍️</div>';
+    require 'mail/send.php';
     header("location:login.php");
 
     }
     
     else{
-    // echo"<script>alert('Not Registered 🚫️');window.location='register.php';</script>";
     echo '<div style="
     color:red;
     text-align:center;
@@ -147,9 +146,5 @@ else{
 }
 
 
-// echo '<p style="
-// color:green;
-// text-align:center;
-// text-transform:capitalize;
-// ">hey</p>'
+
 ?>

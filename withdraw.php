@@ -23,11 +23,13 @@ require 'balance.php';
 
     <div class="withd">
     <p>your account balance is $<?php echo $bal ?> </p>
-    <p><?php echo $error=""; ?></p>
+    <p><?php if (isset($_POST['withdraw-btn'])) {
+       require 'withdraw_act.php';
+    } ?></p>
 
     <section>
 
-        <form action="withdraw_act.php" method="post">
+        <form action="" method="post">
     <input type="number" name="amt"  placeholder="enter amount" required>
     <input type="text" name="wallet"  placeholder="enter wallet address" required>
     <input type="hidden" name="iid"  value="<?php echo $_SESSION['id']; ?>">
@@ -47,7 +49,7 @@ require 'balance.php';
                <option value="Usdt Trc20" name="net">Usdt Trc20</option>
            </select>
     
-        <input type="submit" value="withdraw" id="btn">
+        <input type="submit" value="withdraw" id="btn" name="withdraw-btn">
     </form>
     
     </section>

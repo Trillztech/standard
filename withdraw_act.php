@@ -19,11 +19,26 @@ $bal = $row['balance'];
 if ($_SERVER['REQUEST_METHOD']=="POST"){
 		
     if (empty($amt)||empty($recieve)||empty($network)||empty($trans)){
-        echo "<script>alert('please fill all text fields 🚫️'); window.location='withdraw.php';</script>";
+        // echo "<script>alert('please fill all text fields 🚫️'); window.location='withdraw.php';</script>";
+echo '<p style="
+color:red;
+text-align:center;
+text-transform:capitalize;
+padding:2%;
+box-sizing:border-box;
+">Invalid Transaction 🚫️</p>';
+
     }
 
     elseif($amt>$bal){
-        echo "<script>alert('insufficent funds 🚫️'); window.location='withdraw.php';</script>";
+        // echo "<script>alert('insufficent funds 🚫️'); window.location='withdraw.php';</script>";
+         echo '<p style="
+         color:red;
+         text-align:center;
+         text-transform:capitalize;
+         padding:2%;
+         box-sizing:border-box;
+         ">Insufficent Balance 🚫️</p>';
     }
 
     else {   
@@ -60,11 +75,17 @@ if ($inn) {
         $rest = $conn->query($upt);
 
         if ($rest) {
-            echo"<script>alert('Your Withdrawal is pending');window.location='withdraw.php';</script>";
+            echo "<script>window.location='transactions.php';</script>";
         }
     
 else{
-echo"<script>alert('Invalid Transaction 🚫️');window.location='withdraw.php';</script>";
+echo '<p style="
+color:red;
+text-align:center;
+text-transform:capitalize;
+padding:2%;
+box-sizing:border-box;
+">Invalid Transaction 🚫️</p>';
 }
 }
 }

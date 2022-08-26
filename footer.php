@@ -29,11 +29,11 @@
         <section id="spanrw" data-aos="flip-right"><br>
             <h1>get in touch!</h1><br>
     <div>
-    <i class="fas fa-envelope"></i><p>support@ameriprise.com </p>
+    <i class="fas fa-envelope"></i><p><a href="mailto:support@minexlimited.com">support@minexlimited.com</a> </p>
     </div>
 
     <div>
-    <i class="fas fa-map-marker-alt"></i><p>Lorem ipsum dolor sit amet....</p>
+    <i class="fas fa-map-marker-alt"></i><p>44 PRIORY ROAD LONDON UNITED KINGDOM NW6 4SJ</p>
     </div>
            
         </section>

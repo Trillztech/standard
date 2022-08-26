@@ -37,7 +37,6 @@ p{
 }
 
 /* style for header */
-
 header{
     border: 0px solid red;
     width: 100%;
@@ -92,8 +91,8 @@ header{
 }
 /* end */
 
-/* style for sidenav */
 
+/* style for sidenav */
 .dits{
     display: none;
 }
@@ -103,11 +102,10 @@ header{
 }
 
 /* style for homepage css */
-
 .home{
     width: 100%;
     box-sizing: border-box;
-
+    border: 0px solid red;
 }
 
 .bod{
@@ -130,6 +128,7 @@ header{
     flex-direction: column;
     align-items:center;
     justify-content:center;
+    border: 0px solid red;
 }
 
 .text h1{
@@ -171,9 +170,11 @@ header{
     top: 38vh;
     width: 100%;
     margin-top: 20%;
+    pointer-events: none;
+    cursor: not-allowed;
 }
-/* style for homepage button  */
 
+/* style for homepage button  */
   button {
     width: 140px;
     height: 45px;
@@ -183,7 +184,7 @@ header{
     outline: none;
     background: transparent;
     color:white;
-    font-family: sans-serif'Times New Roman', Times, serif;
+    font-family: sans-serif;
     font-weight: 700;
     position: relative;
     margin-top: 50px;
@@ -223,7 +224,6 @@ header{
 
 
    /* style for second phase css */
-
    .second{
        width: 100%;
        border: 0px solid red;
@@ -258,7 +258,6 @@ header{
    }
 
    /* style for get started */
-
    .get{
        width: 100%;
        box-sizing: border-box;
@@ -311,7 +310,6 @@ header{
    }
 
    /* style for choose plan */
-
    .choose{
        width: 100%;
        border: 0px solid red;
@@ -386,7 +384,6 @@ header{
    }
 
    /* style for button on choose a plan phase */
-
   .button {
      width: 140px;
      height: 45px;
@@ -431,10 +428,8 @@ header{
     }
 
     /* style for calculator */
-
     .cal{
         width: 100%;
-        border:0px solid red;
         padding: 1%;
     }
 
@@ -461,7 +456,6 @@ header{
     }
 
     /* style for faq */
-
 .faq{
     width: 100%;
     box-sizing: border-box;
@@ -603,12 +597,11 @@ header{
 
 
 /* style for about us */
-
 .about{
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    border: 0px solid red;
+    border: 0px solid blue;
     flex-direction: column;
 }
 
@@ -651,7 +644,6 @@ header{
 }
 
 /* style for patners */
-
 .patners{
     width: 100%;
     border: 0px solid red;
@@ -678,11 +670,11 @@ header{
 }
 
 /* style for contact us */
-
 .seven{
     width: 100%;
     display: flex;
     flex-direction: column;
+    border: 0px solid blue;
 }
 
 .seven span{
@@ -797,14 +789,19 @@ header{
     font-size: 1rem;
 }
 
-/* style for stastics */
+.seven #spat span #tet p a{
+text-decoration: none;
+color: #4d4d4d;
+}
 
+/* style for stastics */
 .stat{
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    border: 0px solid blue;
 }
 
 .stat section{
@@ -818,7 +815,7 @@ header{
 .stat #count{
     background-color:inherit;
     width: 100%;
-    border: 0px solid blue;
+    border: 0px solid red;
 }
 
 .stat #count div{
@@ -929,6 +926,20 @@ header{
     box-shadow: 0px 0px 0px grey;
 }
 
+/* style for certificate */
+.certificate{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate img{
+    width: 30%;
+    margin: auto;
+}
+
+
+
 /* style for coin market */
 
 .frameed{
@@ -940,6 +951,8 @@ header{
 
 .frameed .coin,.frameed .coinx{
     width: 100%;
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 /* style for find advisor page */
@@ -1571,7 +1584,6 @@ button {
 }
 
 /* style for review css */
-
 #kit{
     width: 100;
 }
@@ -1579,7 +1591,6 @@ button {
  #kit p{
     font-size: 1.6rem;
  }
-
 
 .review{
     width: 100%;
@@ -1595,22 +1606,24 @@ button {
     margin-right: 2%;
 }
 
-/* style for coin market */
+.certificate img{
+    width:80%;
+}
 
+/* style for coin market */
 .frameed .coin,.frameed .coinx{
-    border: 0px solid red;
     width: 100%;
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 /* style for footer */
-
 footer .foot section{
     width: 90%;
     margin-top: 4%;
 }
 
 /* style for find advisor */
-
 .regf{
     width: 95%;
     margin-top:20%;
@@ -1640,7 +1653,7 @@ footer .foot section{
     flex-wrap: wrap;
 }
 
-.regf form section input{
+.regf form section input,.regf form section #try{
     width:90%;
 }
 

@@ -2,9 +2,6 @@
 session_start();
 require 'connect.php';
 require('restriction.php');
-if (isset($_POST['wall'])) {
-    require 'wallet_form.php';
-}
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -28,8 +25,11 @@ if (isset($_POST['wall'])) {
      <form action="" method="post" name="base_wallet">
 
    <section>
-
-           <p>1. &nbsp select payment method</p>
+<p><?php
+if (isset($_POST['wall'])) {
+    require 'wallet_form.php';
+}?></p>
+           <p> select payment method</p>
 
            <select name="crypto"  onchange="paymentcoin()" required>
                <option value="">wallet type</option>
@@ -39,7 +39,8 @@ if (isset($_POST['wall'])) {
                <option value="usdt" name="pay">Usdt</option>
            </select>
     <input type="number" name="amt" placeholder="Amount" required>
-    <input type="text" name="swallet" placeholder="wallet address" required>
+    <label style="color:red;text-align:center;padding-top:10px;text-transform:capitalize;">****enter your wallet address(Sender's wallet address)****</label>
+    <input type="text" name="swallet" placeholder="enter your wallet address" required>
     <input type="hidden" name="reciver_wallet" placeholder="reciever wallet address" required readonly>
     <input type="hidden" name="network" required readonly>
     <input type="submit" value="proceed" name="wall" id="btn">

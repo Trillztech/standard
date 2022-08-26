@@ -1,7 +1,7 @@
 <?php
 require 'connect.php';
 
-$select="select * from user_tab order by rand() limit 10";
+$select="select * from user_tab order by rand() limit 7";
 $sql=$conn->query($select);
 $num=$sql->num_rows;
 

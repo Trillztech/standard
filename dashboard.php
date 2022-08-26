@@ -4,6 +4,7 @@ require 'connect.php';
 require('restriction.php');
 require 'balance.php'; 
 require 'select.php';
+require 'update_user_wallet.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +42,15 @@ require 'select.php';
     <h1>$<?php echo $bal ?></h1>
     <p>balance</p>
     <h4>+0.00%</h4>
-    <p>daily</p>
+    <p>
+        <button><a href="deposit.php">Deposit</a></button>
+        <?php
+        if ($bal>20) {
+            echo '<button><a href="withdraw.php">Withdraw</a></button>';
+        }
+        else {}
+        ?>
+    </p>
 </span>
 
 <span id="rou">
@@ -51,23 +60,39 @@ require 'select.php';
 
     <section>
     <span>
-    <h1>$<?php echo $rot['amount']; ?></h1>
-    <p><?php echo $rot['plan']; ?></p>
+    <h1>$<?php echo $dot['amount']; ?></h1>
+    <p><?php echo $dot['plan']; ?></p>
+    <p>$<?php echo $dot['profit']; ?></p>
+    <p>profit</p>
     <p>last transaction</p>
 </span>
 
 <span id="rou">
    <p>$</p>
 </span>
-    
-    </section>
+</section>
 
-    <section>
+<section>
 <span>
     <h1>$<?php echo $row['ref_bonus'] ?></h1>
     <p>referral bonus</p>
     <h4>+10.00%</h4>
-    <p>referral commission</p>
+    <p>
+       <form action="" method="post">
+            <?php
+        if ($row['ref_bonus']!=0) {
+            echo '<input type="submit" name="bonus" value="Withdraw" id="input">';
+        }
+        else {}
+        ?></form> 
+        </p>
+<input type="text" id="add" value="https://minexlimited.com/register.php?ref=<?php echo $_SESSION['email'];?>">
+    <input type="submit" value="refferal link"  id="inputx" onclick="poppyx()">
+    <p><?php 
+    if (isset($_POST['bonus'])) {
+        require 'bonus_withdrawal.php';
+    }
+    ?></p>
 </span>
 
 <span id="rou">
@@ -92,18 +117,22 @@ require 'select.php';
     <h3>last Deposit</h3>
     <h3>last withdrawal</h3>
     <h3>active plan</h3>
-    <!-- <h3>total Deposits</h3>
-    <h3>total withdrawals</h3> -->
-    <h3>status</h3>
+    <!-- <h3>status</h3> -->
 </span>
 
 <span>
     <p>$<?php echo $roll['amount']; ?></p>
-    <p>$0.00</p>
+    <p>$<?php echo $woll['amount']; ?></p>
+    <?php while ($rot=$slq->fetch_assoc()) {
+    if ($slq) {?>
     <p><?php echo $rot['plan']; ?></p>
-    <!-- <p>$0.00</p>
-    <p>$0.00</p> -->
-    <p>running</p>
+    <p>$<?php echo $rot['amount']; ?></p>
+    <?php 
+    }
+    else{ ?>
+        <p><?php echo "No active investment";?></p>
+    <?php } } ?>
+    <!-- <p>running</p> -->
 </span>
 
 </section>

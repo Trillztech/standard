@@ -75,11 +75,19 @@ require 'connect.php';
 
 // $crt="create table if not exists investment_plan(
 //     id int(10) auto_increment not null primary key,
-//     plan varchar(50) not null,
+//     investor_name varchar(55) not null,
 //     amount varchar(500) not null,
+//     plan varchar(50) not null,
 //     percentage varchar(290) not null,
-//     roi varchar(20) not null,
+//     interest varchar(20) not null,
+//     profit varchar(50) not null,
+//     counter varchar(60) not null,
+//     date varchar(30) not null,
 //     investor_id varchar(11) not null,
+//     any_1 varchar(50) not null,
+//     any_2 varchar(50) not null,
+//     any_3 varchar(50) not null,
+//     empty1 varchar(50) not null,
 //     empty2 varchar(91) not null)
 //     ENGINE InnoDB;";
 
@@ -115,29 +123,29 @@ require 'connect.php';
 // 	die("table not created");
 // }
 
-$crt="create table if not exists withdraw(
-    id int(10) auto_increment not null primary key,
-    amount varchar(500) not null,
-    reciver_wallet varchar(290) not null,
-    status varchar(20) not null,
-    date varchar(11) not null,
-    reciever_id varchar(91) not null,
-    reciever_name varchar(98) not null,
-    network  varchar(95) not null,
-    crypto_type varchar(91) not null,
-    plan varchar(51) not null
-    )
-    ENGINE InnoDB;";
+// $crt="create table if not exists withdraw(
+//     id int(10) auto_increment not null primary key,
+//     amount varchar(500) not null,
+//     reciver_wallet varchar(290) not null,
+//     status varchar(20) not null,
+//     date varchar(11) not null,
+//     reciever_id varchar(91) not null,
+//     reciever_name varchar(98) not null,
+//     network  varchar(95) not null,
+//     crypto_type varchar(91) not null,
+//     plan varchar(51) not null
+//     )
+//     ENGINE InnoDB;";
 
-    $sql=$conn->query($crt);
+//     $sql=$conn->query($crt);
 
-if ($sql) {
-	die("table created");
-}
+// if ($sql) {
+// 	die("table created");
+// }
 
-else{
-	die("table not created");
-}
+// else{
+// 	die("table not created");
+// }
 
 
 // $crt="create table if not exists contact_us(
@@ -162,6 +170,36 @@ else{
 // else{
 // 	die("table not created");
 // }
+
+
+$crt="create table if not exists transfer_tab(
+    id int(10) auto_increment not null primary key,
+    name varchar(55) not null,
+    amount varchar(500) not null,
+    status varchar(50) not null,
+    date  varchar(290) not null,
+    receiver_email varchar(200) not null,
+    receiver_id varchar(50) not null,
+    counter varchar(60) not null,
+    any varchar(30) not null,
+    anyx varchar(11) not null,
+    any_1 varchar(50) not null,
+    any_2 varchar(50) not null,
+    any_3 varchar(50) not null,
+    empty1 varchar(50) not null,
+    empty2 varchar(91) not null)
+    ENGINE InnoDB;";
+
+    $sql=$conn->query($crt);
+
+if ($sql) {
+	die("table created");
+}
+
+else{
+	die("table not created");
+}
+
 
 
 ?>
